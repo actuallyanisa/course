@@ -1,6 +1,6 @@
 # Next.js course template
 
-This repository contains the source code for a Next.js app you can use to
+This repositorč contains the source code for a Next.js app you can use to
 publish an interactive course with React.
 
 [Click here to see a demo!](https://nextjs-course-template.vercel.app)

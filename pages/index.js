@@ -2,6 +2,7 @@ import { BrowserMockup } from '../components/browser-mockup'
 import Layout from '../components/layout'
 import { Lesson } from '../components/lesson'
 import { getLessonContent } from '../lib/lessons'
+import Link from 'next/link'
 
 const Home = ({ lesson }) => {
   return (
@@ -63,9 +64,9 @@ const Home = ({ lesson }) => {
             <Lesson lesson={lesson} />
             <div className="my-8 flex flex-col space-y-2 items-center">
               <span>Liked this lesson?</span>
-              <a className="btn btn-primary" href="/course">
-                Continue learning
-              </a>
+              <Link href="/course" legacyBehavior>
+                <a className="btn btn-primary">Continue learning</a>
+              </Link>
             </div>
           </BrowserMockup>
         </div>

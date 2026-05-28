@@ -1,0 +1,37 @@
+# Query: <Link
+# ContextLines: 1
+
+7 results - 5 files
+
+components/footer.js:
+  6        <p className="text-2xl mb-4">
+  7:         <Link href="/">
+  8            <a className="text-white">Next.js course template</a>
+
+components/header.js:
+   5      <header className="flex items-center justify-between p-2 border-b border-gray-200">
+   6:       <Link href="/">
+   7          <a className="text-pink-800 text-lg flex space-x-2">
+
+  13            <li>
+  14:             <Link href="/course">
+  15                <a className="text-pink-800 hover:underline">Course</a>
+
+pages/index.js:
+  66                <span>Liked this lesson?</span>
+  67:               <Link href="/course" className="btn btn-primary">
+  68                  Continue learning
+
+pages/course/[slug].js:
+  22        <header className="text-sm mb-6">
+  23:         <Link href="/course">
+  24            <a className="text-pink-600">← Back to lessons</a>
+
+  29          {lesson.next && (
+  30:           <Link href={`/course/${lesson.next.slug}`}>
+  31              <a className="text-pink-600 text-2xl">
+
+pages/course/index.js:
+  19            <li className="border border-b-0 last:border-b first:rounded-t-md last:rounded-b-md border-gray-200 bg-white hover:bg-pink-50">
+  20:             <Link href={`/course/${lesson.slug}`}>
+  21                
